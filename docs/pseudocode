@@ -1,0 +1,18 @@
+When user clicks button [eventListener onclick]
+    prompt for length, => 8 to =< 128 chars
+        prompt for lowercase
+        prompt for uppercase
+        prompt for numeric
+        prompt for special characters
+        **validate at least one type selected
+
+using user-requested length
+    if lowercase selected, at least one
+    if uppercase selected, at least one
+    if numeric selected, at least one
+    if special characters selected, at least one
+NONE of the unselected characters
+randomly generated characters until at length
+
+when generated
+document edited to show in "your secure password"
