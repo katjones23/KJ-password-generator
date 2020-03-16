@@ -10,5 +10,9 @@ function writePassword() {
 
 }
 
+function generatePassword() {
+  prompt("How long would you like your password to be?\nPlease enter a value between 8 and 128", "8")
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);

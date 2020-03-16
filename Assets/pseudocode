@@ -1,4 +1,4 @@
-When user clicks button [eventListener onclick]
+When user clicks button
     prompt for length, => 8 to =< 128 chars
         prompt for lowercase
         prompt for uppercase
