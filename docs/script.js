@@ -11,7 +11,15 @@ function writePassword() {
 }
 
 function generatePassword() {
-  prompt("How long would you like your password to be?\nPlease enter a value between 8 and 128", "8")
+  // var numericExpression = /^[0-9]+$/;
+  var passLength = parseInt(prompt("How long would you like your password to be?\nPlease enter a value between 8 and 128", "8"));
+  var confirmLowercase = confirm("Do you want to use lowercase characters?")
+  var confirmUppercase = confirm("Do you want to use uppercase characters?")
+  var confirmNumeric = confirm("Do you want to use numbers?")
+  var confirmSpecial = confirm("Do you want to use special characters?")
+
+
+
 }
 
 // Add event listener to generate button
