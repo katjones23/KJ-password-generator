@@ -30,17 +30,12 @@ function generatePassword() {
     alert("Please enter a number between 8 and 128.")
     return;
   }
-  console.log(passLength);
 
   // get character sets
   var confirmLowercase = confirm("Do you want to use lowercase characters?")
-  console.log("lowercase " + confirmLowercase);
   var confirmUppercase = confirm("Do you want to use uppercase characters?");
-  console.log("uppercase  " + confirmUppercase);
   var confirmNumeric = confirm("Do you want to use numbers?");
-  console.log("numbers  " + confirmNumeric);
   var confirmSpecial = confirm("Do you want to use special characters?");
-  console.log("special  " + confirmSpecial);
 
   // confirm that at least one charset is selected, alert if not
   var confirmArray = [confirmLowercase, confirmUppercase, confirmNumeric, confirmSpecial];
@@ -91,32 +86,25 @@ function generatePassword() {
 
     if ((confirmLowercase && password.search(lcReg) !== -1) || !confirmLowercase) {
       oneLC++;
-      console.log("lc " + oneLC);
     }
     if ((confirmUppercase && password.search(ucReg) !== -1) || !confirmUppercase) {
       oneUC++;
-      console.log("uc " + oneUC);
     }
     if ((confirmNumeric && password.search(numReg) !== -1) || !confirmNumeric) {
       oneNum++;
-      console.log("num " + oneNum);
     }
     if ((confirmSpecial && password.search(specReg) !== -1) || !confirmSpecial) {
       oneSpec++;
-      console.log("spec " + oneSpec);
     }
     if (oneLC < 1 || oneUC < 1 || oneNum < 1 || oneSpec < 1) {
       isValid = false;
-      console.log("isValid= " + isValid);
     } else {
       isValid = true;
-      console.log("isValid= " + isValid);
     }
   }
 
   while (!isValid) {
     passloop();
-    console.log(password);
   }
 
   return password;
