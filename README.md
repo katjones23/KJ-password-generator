@@ -2,6 +2,8 @@
 
 ## Description 
 
+[Deployed Link](https://katjones23.github.io/KJ-password-generator/)
+
 A webpage with a password generator that will take input from the user as to length and character types to include in the password.
 
 ## Credits
